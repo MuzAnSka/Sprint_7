@@ -1,4 +1,4 @@
-package com.company.orderTests;
+package com.company.order.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;

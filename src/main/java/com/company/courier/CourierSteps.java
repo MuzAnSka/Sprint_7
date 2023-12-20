@@ -1,21 +1,12 @@
 package com.company.courier;
 
 import io.qameta.allure.Step;
-import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
-import io.restassured.specification.RequestSpecification;
 
-import static io.restassured.RestAssured.given;
 import static com.company.Constants.*;
 
-public class CourierSteps {
 
-    public static RequestSpecification requestSpec() {
-        return given().log().all()
-                .contentType(ContentType.JSON)
-                .baseUri(BASE_URL);
-    }
-
+public class CourierSteps extends BaseClient{
     @Step("Регистрация нового курьера")
     public ValidatableResponse createCourier(CourierModel courierModel) {
         return requestSpec()

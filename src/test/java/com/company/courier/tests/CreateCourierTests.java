@@ -1,4 +1,4 @@
-package com.company.courierTests;
+package com.company.courier.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
@@ -11,7 +11,7 @@ import com.company.courier.*;
 
 public class CreateCourierTests {
     protected final CourierRandomizer courierRandomizer = new CourierRandomizer();
-    int courierId;
+    private int courierId;
     private CourierSteps courierSteps;
     private CourierModel courierModel;
     private CourierAssert courierAssert;
